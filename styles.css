@@ -1,0 +1,81 @@
+#cart-body{
+   margin:0;
+   background-color: #F2F2F2;
+}
+
+#cart-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "title title title"
+    "section section aside"
+    "section section aside"
+    "section section aside"
+    "section section aside"
+    "section section aside"
+    ;
+}
+
+#cart-title{
+    grid-area: title;
+    border:2px solid black;
+    height:70px;
+}
+
+#cart-section{
+    grid-area: section;
+    border:3px solid #4A5FD9;
+}
+
+.cart-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "figure title div1 div2"
+    "figure title div1 div2"
+    ;
+    border-bottom:1px solid #4A5FD9;
+    padding: 0;
+}
+
+.cart-divradiobutton{
+ grid-area: div1;
+ display: flex;
+ flex-direction: column ;
+ gap:15px;
+ margin:0;
+padding: 0;
+}
+
+.cart-product-name{
+    grid-area: title;
+    text-align: left;
+    margin-left:0;
+}
+
+.cart-divradiobutton>h4{
+  margin-bottom:0;
+  font-size:18px;
+}
+
+.cart-select-button{
+    grid-area: div2;
+}
+
+.cart-div>figure{
+    padding:0;
+    grid-area:figure;
+}
+
+.cart-img{
+    width:200px;
+    height:200px;
+    margin:0;
+    border: 1px solid #000;
+}
+
+#cart-aside{
+    grid-area: aside;
+}

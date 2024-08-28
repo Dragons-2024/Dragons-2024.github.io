@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* general */
+button {
+    border: none;
+    border-radius: 1rem;
+    background-color: #4A5FD9;
+    padding: 9px 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #F2F2F2;
+    color: black;
+}
+/* header */
+header {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #1E2759;
+    gap: 6rem;
+}
+
+.Logo {
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+
+}
+
+
+.Logo img {
+    height: 100%;
+    width: auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    flex: 1;
+    max-width: 700px;   
+}
+
+.search input {
+    height: 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.nav ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+.nav li {
+    margin-right: 0.5rem; 
+}
+
+.nav li:last-child {
+    margin-right: 0; 
+}
+
+.nav a {
+    color: white;
+    text-decoration: none; 
+    padding: 0.5rem 1rem; 
+    transition: color 0.3s; 
+}
+.nav a:hover {
+    color: #4A5FD9; 
+}

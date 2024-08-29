@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5f5b5b;
+    padding: 10px;
+    color: white;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .main-nav ul li {
+    margin-right: 15px;
+}
+
+header .main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .cart-icon img {
+    width: 30px;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    margin: 15px;
+    font-size: 14px;
+}
+
+/* Main Container Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+/* Filter Box Styles */
+.filter-box {
+    width: 25%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.filter-box h2, .filter-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.filter-box label {
+    font-size: 14px;
+}
+
+/* Product List Styles */
+.product-list {
+    width: 70%;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.product-item:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-item .rating img {
+    width: 18px;
+    vertical-align: middle;
+}
+
+.product-item .price {
+    margin: 10px 0;
+}
+
+.product-item .normal-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.product-item .discounted-price {
+    font-size: 18px;
+    color: red;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Banner Styles */
+.banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5f5b5b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .footer-links ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media a img {
+    width: 25px;
+    margin: 0 5px;
+}
+
+footer p {
+    margin: 10px 0 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filter-box, .product-list {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .product-item {
+        text-align: center;
+    }
+}

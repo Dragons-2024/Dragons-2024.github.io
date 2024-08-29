@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Magister - Tu tienda de computadoras de confianza.">
+    <meta name="keywords" content="computadoras, laptops, tecnología, Magister">
+    <meta name="author" content="Magister">
+    <title>Lista de Productos - Magister</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="Logo de Magister"></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Computadoras</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="#"><img src="images/cart.jpg" alt="Carrito de compras"></a>
+        </div>
+    </header>
+
+    <!-- Migaja de pan -->
+    <div class="breadcrumb">
+        <a href="#">Inicio</a> &gt; <a href="#">Computadoras</a> &gt; Lista de Productos
+    </div>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="container">
+            <!-- Caja de Filtros -->
+            <aside class="filter-box">
+                <h2>Filtrar por</h2>
+                <div class="filter-category">
+                    <h3>Marca</h3>
+                    <label><input type="checkbox"> Lenovo (4)</label><br>
+                    <label><input type="checkbox"> HP (3)</label><br>
+                    <label><input type="checkbox"> Dell (2)</label>
+                </div>
+                <div class="filter-category">
+                    <h3>Procesador</h3>
+                    <label><input type="checkbox"> Intel i5 (5)</label><br>
+                    <label><input type="checkbox"> Intel i7 (3)</label><br>
+                    <label><input type="checkbox"> AMD Ryzen 5 (1)</label>
+                </div>
+                <div class="filter-category">
+                    <h3>RAM</h3>
+                    <label><input type="checkbox"> 8 GB (6)</label><br>
+                    <label><input type="checkbox"> 16 GB (4)</label>
+                </div>
+                <div class="filter-category">
+                    <h3>Almacenamiento</h3>
+                    <label><input type="checkbox"> 256 GB SSD (5)</label><br>
+                    <label><input type="checkbox"> 512 GB SSD (3)</label><br>
+                    <label><input type="checkbox"> 1 TB HDD (2)</label>
+                </div>
+                <div class="filter-category">
+                    <h3>Precio</h3>
+                    <label><input type="checkbox"> $500 - $1000 (4)</label><br>
+                    <label><input type="checkbox"> $1000 - $1500 (3)</label><br>
+                    <label><input type="checkbox"> $1500 - $2000 (2)</label>
+                </div>
+            </aside>
+
+            <!-- Lista de Productos -->
+            <section class="product-list">
+                <div class="list-header">
+                    <span>10 resultados de 10</span>
+                    <select>
+                        <option>Ordenar por: Relevancia</option>
+                        <option>Fecha de carga</option>
+                        <option>Precio menor a mayor</option>
+                        <option>Precio mayor a menor</option>
+                    </select>
+                </div>
+
+                <!-- Producto 1 -->
+                <div class="product-item">
+                    <a href="#">
+                        <img src="images/productos/computadora1.jpeg" alt="Producto 1">
+                        <h3>Lenovo ThinkPad X1 Carbon</h3>
+                        <p class="rating"><img src="images/star.png" alt="5 estrellas"> 5.0</p>
+                        <p class="features">Intel i7, 16GB RAM, 512GB SSD</p>
+                        <p class="price"><span class="normal-price">$1500</span> <span class="discounted-price">$1200</span></p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </a>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-item">
+                    <img src="images/productos/computadora2.jpeg" alt="Producto 2">
+                    <h3>HP Spectre x360</h3>
+                    <p class="rating"><img src="images/star.png" alt="4.5 estrellas"> 4.5</p>
+                    <p class="features">Intel i5, 8GB RAM, 256GB SSD</p>
+                    <p class="price"><span class="normal-price">$1300</span> <span class="discounted-price">$1100</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-item">
+                    <img src="images/productos/producto3.jpeg" alt="Producto 3">
+                    <h3>Dell XPS 13</h3>
+                    <p class="rating"><img src="images/star.png" alt="4.8 estrellas"> 4.8</p>
+                    <p class="features">Intel i7, 16GB RAM, 512GB SSD</p>
+                    <p class="price"><span class="normal-price">$1600</span> <span class="discounted-price">$1400</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+
+                <!-- Productos restantes (4-10) -->
+                <!-- Repite la estructura de los productos anteriores para los demás productos -->
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Banner Publicitario -->
+    <div class="banner">
+        <img src="images/logo.png" alt="Banner Publicitario">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Magister. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5f5b5b;
+    background-color: #4A5FD9;
     padding: 10px;
     color: white;
 }
@@ -156,7 +156,7 @@ header .cart-icon img {
 
 /* Footer Styles */
 footer {
-    background-color: #5f5b5b;
+    background-color: #4A5FD9;
     color: white;
     text-align: center;
     padding: 20px 0;

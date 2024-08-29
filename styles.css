@@ -19,10 +19,8 @@
 
 #cart-title {
     grid-area: title;
-    border: 2px solid black;
-    height:auto;
     padding:10px;
-    
+    margin-bottom: 0;
 }
 
 #cart-title>h1{
@@ -30,15 +28,19 @@
     margin:0;
     color: #4A5FD9;
     font-weight: bold;
+    margin-top:30px;
+    margin-bottom: 30px;
     font-size:50px;
 }
 
-#cart-section {
+#cart-list {
     grid-area: section;
     margin-left:10px;
+    margin-top: 0;
+    margin-bottom:20px;
 }
 
-#cart-section>h2{
+#cart-list>h2{
     color: #4A5FD9;
 }
 
@@ -50,8 +52,18 @@
         "figure title div1 div2"
         "figure title div1 div2"
     ;
-    border: 3px solid #4A5FD9;
+    border-left: 3px solid #4A5FD9;
+    border-right: 3px solid #4A5FD9;
+    border-bottom: 1px solid #4A5FD9;
     padding: 0;
+}
+
+h2+.cart-div{
+    border-top: 3px solid #4A5FD9;
+}
+
+#cart-list .cart-div:last-child{
+    border-bottom:3px solid #4A5FD9;
 }
 
 .cart-div>figure {
@@ -83,20 +95,25 @@
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
+    margin-left: 10px;
+    padding-top: 10px;
     /* border: 2px solid blue; */
+    padding-left: 5px;
 }
 
 
-.cart-divradiobutton>h4 {
+.cart-divradiobutton h4 {
     margin-bottom: 0;
     font-size: 18px;
-    color: #4A5FD9;
-    padding: 10px;
+    color: #1E2759;
+    margin-left:5px;
+    padding-bottom: 0;
     margin-top:12px ;
 }
 
 .cart-divradiobutton label{
     margin:0;
+    color:#0d0d0d;
 }
 
 .cart-divradiobutton input[type="radio"] {
@@ -112,7 +129,7 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    padding-top: 35px;
+    padding-top: 25px;
     width: 120px;
 }
 
@@ -152,4 +169,5 @@
 
 #cart-aside {
     grid-area: aside;
+    margin-top: 0;
 }

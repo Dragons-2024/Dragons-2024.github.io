@@ -1,55 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body id="cart-body">
-    <header>
-    </header>
+  <body id="cart-body">
+    <header></header>
     <main id="cart-main">
-        <section id="cart-title">
-            <h1>Carrito de Compras</h1>
-            <span><a href="index.html">Inicio</a> > <a href="cart.html">Mi_Carrito</a></span>
-        </section>
-        <section id="cart-section">
-            <h2>Listado de productos de mi carrito:</h2>
-            <div class="cart-div">
-                <figure>
-                    <img class="cart-img" src="img/Camara.jpg" alt="Camara">
-                </figure>
-                <h3 class="cart-product_name">Cámara Fotográfica CANON EOS T100 Negro</h3>
-                    <div class="cart-divradiobutton">
-                        <h4>Metodo de envio:</h4>
-                        <label for="radio-product"><input class="cart-radiobutton"
-                            id="radio-product1" type="radio" name="radio-button">Envio estandar </label>
-                        <label for="radio-product"><input class="cart-radiobutton"
-                                id="radio-product2" type="radio" name="radio-button" checked>Envio Express </label>
-                        <label for="radio-product"><input class="cart-radiobutton"
-                                id="radio-product2" type="radio" name="radio-button">Envio programado </label>
-                        </div>
-                    <div class="cart-select-button">
-                        <label>Cantidad:
-                            <select name="cart-select" class="cart-select">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </label>
-                        
-                        <button ><img class="cart-delete" src="img/delete.svg" alt="Eliminar"></button>
-                    </div>
-                </div>
-        </section>
-        <aside id="cart-aside"></aside>
+      <section id="cart-title">
+        <h1>Carrito de Compras</h1>
+        <span
+          ><a href="index.html">Inicio</a> >
+          <a href="cart.html">Carrito</a></span
+        >
+      </section>
+      <section id="cart-list">
+        <h2>Listado de productos de mi carrito:</h2>
+        <div class="cart-div">
+          <figure>
+            <img class="cart-img" src="img/Camara.jpg" alt="Camara" />
+          </figure>
+          <h3 class="cart-product_name">
+            Cámara Fotográfica CANON EOS T100 Negro
+          </h3>
+          <div class="cart-divradiobutton">
+            <h4>Metodo de envio:</h4>
+            <label for="radio-product1"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product1.1"
+                type="radio"
+                name="radio-button1"
+              />Envio estandar
+            </label>
+            <label for="radio-product1"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product1.2"
+                type="radio"
+                name="radio-button1"
+                checked
+              />Envio Express
+            </label>
+            <label for="radio-product1"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product1.3"
+                type="radio"
+                name="radio-button1"
+              />Envio programado
+            </label>
+          </div>
+          <div class="cart-select-button">
+            <label
+              >Cantidad:
+              <select name="cart-select" class="cart-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </label>
+            <button>
+              <img class="cart-delete" src="img/delete.svg" alt="Eliminar" />
+            </button>
+          </div>
+        </div>
+        <div class="cart-div">
+          <figure>
+            <img class="cart-img" src="img/Television.jpg" alt="Television" />
+          </figure>
+          <h3 class="cart-product_name">
+            TV TCL 43" Pulgadas 109 cm 43S5400A FHD LED Smart TV Android
+          </h3>
+          <div class="cart-divradiobutton">
+            <h4>Metodo de envio:</h4>
+            <label for="radio-product2"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product2.1"
+                type="radio"
+                name="radio-button2"
+                checked
+              />Envio estandar
+            </label>
+            <label for="radio-product2"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product2.2"
+                type="radio"
+                name="radio-button2"
+              />Envio Express
+            </label>
+            <label for="radio-product2"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product2.3"
+                type="radio"
+                name="radio-button2"
+              />Envio programado
+            </label>
+          </div>
+          <div class="cart-select-button">
+            <label
+              >Cantidad:
+              <select name="cart-select" class="cart-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </label>
+            <button>
+              <img class="cart-delete" src="img/delete.svg" alt="Eliminar" />
+            </button>
+          </div>
+        </div>
+        <div class="cart-div">
+          <figure>
+            <img class="cart-img" src="img/Reloj.jpg" alt="Smart Watch" />
+          </figure>
+          <h3 class="cart-product_name">
+            Banda SAMSUNG Smart Band Galaxy Fit3 Negro
+          </h3>
+          <div class="cart-divradiobutton">
+            <h4>Metodo de envio:</h4>
+            <label for="radio-product3"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product3.1"
+                type="radio"
+                name="radio-button3"
+              />Envio estandar
+            </label>
+            <label for="radio-product3"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product3.2"
+                type="radio"
+                name="radio-button3"
+              />Envio Express
+            </label>
+            <label for="radio-product3"
+              ><input
+                class="cart-radiobutton"
+                id="radio-product3.3"
+                type="radio"
+                name="radio-button3"
+                checked
+              />Envio programado
+            </label>
+          </div>
+          <div class="cart-select-button">
+            <label
+              >Cantidad:
+              <select name="cart-select" class="cart-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </label>
+            <button>
+              <img class="cart-delete" src="img/delete.svg" alt="Eliminar" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside id="cart-aside"></aside>
     </main>
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>

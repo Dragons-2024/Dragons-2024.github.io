@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carro</title>
+    <title>Carrito de Compras</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,9 +13,11 @@
     </header>
     <main id="cart-main">
         <section id="cart-title">
-            <h1 id="cart-main">Carrito de Compras</h1>
+            <h1>Carrito de Compras</h1>
+            <span><a href="index.html">Inicio</a> > <a href="cart.html">Mi_Carrito</a></span>
         </section>
         <section id="cart-section">
+            <h2>Listado de productos de mi carrito:</h2>
             <div class="cart-div">
                 <figure>
                     <img class="cart-img" src="img/Camara.jpg" alt="Camara">
@@ -24,20 +26,22 @@
                     <div class="cart-divradiobutton">
                         <h4>Metodo de envio:</h4>
                         <label for="radio-product"><input class="cart-radiobutton"
-                            id="radio-product1" type="radio">Envio estandar </label>
+                            id="radio-product1" type="radio" name="radio-button">Envio estandar </label>
                         <label for="radio-product"><input class="cart-radiobutton"
-                                id="radio-product2" type="radio">Envio Express </label>
+                                id="radio-product2" type="radio" name="radio-button" checked>Envio Express </label>
                         <label for="radio-product"><input class="cart-radiobutton"
-                                id="radio-product2" type="radio">Envio programado </label>
+                                id="radio-product2" type="radio" name="radio-button">Envio programado </label>
                         </div>
                     <div class="cart-select-button">
-                        <h4>Cantidad:</h4>
-                        <select name="cart-select" id="cart-select">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                        <button><img src="img/delete.svg" alt="Eliminar"></button>
+                        <label>Cantidad:
+                            <select name="cart-select" class="cart-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </label>
+                        
+                        <button ><img class="cart-delete" src="img/delete.svg" alt="Eliminar"></button>
                     </div>
                 </div>
         </section>

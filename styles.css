@@ -91,7 +91,6 @@ header .cart-icon img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-    
 }
 
 .product-item {
@@ -100,37 +99,26 @@ header .cart-icon img {
     padding: 15px;
     margin-bottom: 15px;
     transition: box-shadow 0.3s;
-    
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-   
-    max-height: 100%;
-    max-width: 400px;
-    object-fit: contain;
-    margin-right: 15px;
-    
+    align-items: center;
+    text-align: center;
 }
-
 
 .product-item img {
     max-height: 100%;
     max-width: 200px;
     object-fit: contain;
-    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .product-item:hover {
-    box-shadow: 0px 0px 15px #f2f2f2(0, 0, 0, 0.2);
-
-    
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-item h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    
 }
 
 .product-item .rating img {
@@ -178,8 +166,6 @@ header .cart-icon img {
 }
 
 /* Footer Styles */
-/* Footer principal */
-/* Estilos generales del footer */
 footer {
     display: grid;
     grid-template-rows: auto auto;
@@ -189,14 +175,12 @@ footer {
     padding: 2rem;
 }
 
-/* Sección superior del footer */
 .footer-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
-/* Sección individual del footer */
 .footer-section {
     padding: 1rem;
     background-color: #1E2759;
@@ -204,37 +188,31 @@ footer {
     text-align: center;
 }
 
-/* Lista de la sección del footer */
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
 
-/* Elementos de la lista de la sección del footer */
 .footer-section ul li {
     display: inline-block;
     margin-right: 10px;
 }
 
-/* Enlaces de la lista de la sección del footer */
 .footer-section ul li a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Iconos en los enlaces de la sección del footer */
 .footer-section ul li a i {
     font-size: 24px;
 }
 
-/* Estilos para las imágenes */
 .footer-section ul li a img {
-    max-width: 60px; /* Ancho máximo para las imágenes */
-    max-height: 40px; /* Altura máxima para las imágenes */
-    object-fit: contain; /* Ajusta la imagen para que mantenga su proporción */
+    max-width: 60px;
+    max-height: 40px;
+    object-fit: contain;
 }
 
-/* Sección inferior del footer */
 .footer-bottom {
     grid-column: 1 / -1;
     text-align: center;
@@ -245,32 +223,24 @@ footer {
     gap: 6rem;
 }
 
-/* Lista en la sección inferior del footer */
 .footer-bottom ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Elementos de la lista en la sección inferior del footer */
 .footer-bottom li {
     margin-bottom: 0.5rem;
 }
 
-/* Enlaces en la sección inferior del footer */
 .footer-bottom a {
     text-decoration: none;
     color: #4A5FD9;
 }
 
-/* Hover para enlaces en la sección inferior del footer */
 .footer-bottom a:hover {
     color: #1E2759;
 }
-
-</body>
-
-</html>
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
@@ -285,5 +255,6 @@ footer {
 
     .product-item {
         text-align: center;
+        flex-direction: column;
     }
 }

@@ -5,6 +5,198 @@
     font-family: "Poppins";
 }
 
+/* general */
+button {
+    border: none;
+    border-radius: 1rem;
+    background-color: #4A5FD9;
+    padding: 9px 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #F2F2F2;
+    color: black;
+}
+
+/* header */
+.main-header {
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #1E2759;
+    gap: 4rem;
+}
+
+.Logo {
+    height: 80%;
+    align-items: center;
+    padding: 0.5rem 2rem;
+
+
+}
+
+
+.Logo img {
+    height: 100%;
+    width: auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    flex: 1;
+    max-width: 700px;
+}
+
+.search input {
+    height: 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin-right: 0.5rem;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #4A5FD9;
+}
+
+.sub-header {
+    height: 3rem;
+    padding: 1rem 2rem;
+    background-color: #F2F2F2;
+}
+
+.categorias>ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categorias>ul>li {
+    margin-right: 5rem;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    padding: auto 1rem;
+    transition: color 0.3s;
+
+}
+
+.categorias li:last-child {
+    margin-right: 0;
+}
+
+.categorias>ul>li:hover {
+    color: #4A5FD9;
+}
+
+.sub-categorias {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    background-color: #F2F2F2;
+    z-index: 1;
+}
+
+.categorias>ul>li:hover .sub-categorias {
+    display: block;
+}
+
+
+.categorias>ul>li {
+    position: relative;
+}
+
+.sub-categorias li {
+    padding: 1rem 0;
+}
+
+.sub-categorias li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sub-categorias li a:hover {
+    color: #4A5FD9;
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Logo {
+        margin: 0.5rem 0;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .nav ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 3.5%;
+        left: 70%;
+        gap: 0.5rem;
+
+    }
+
+    .nav a {
+        padding: 0;
+    }
+
+    .sub-header {
+        width: 100%;
+        height: auto;
+    }
+
+    .categorias>ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categorias>ul>li {
+        margin-right: 0;
+        padding: 0.5rem 0;
+    }
+}
+
+/* main */
 main {
     margin-top: 0rem; 
     padding-bottom: 0.5rem; 
@@ -131,3 +323,112 @@ main {
     }
 }  
   
+/* Footer principal */
+/* Estilos generales del footer */
+footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    background-color: #1E2759;
+    color: white;
+    padding: 2rem;
+}
+
+/* Sección superior del footer */
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Sección individual del footer */
+.footer-section {
+    padding: 1rem;
+    background-color: #2E3A69;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* Lista de la sección del footer */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Elementos de la lista de la sección del footer */
+.footer-section ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Enlaces de la lista de la sección del footer */
+.footer-section ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Iconos en los enlaces de la sección del footer */
+.footer-section ul li a i {
+    font-size: 24px;
+}
+
+/* Estilos para las imágenes */
+.footer-section ul li a img {
+    max-width: 60px; /* Ancho máximo para las imágenes */
+    max-height: 40px; /* Altura máxima para las imágenes */
+    object-fit: contain; /* Ajusta la imagen para que mantenga su proporción */
+}
+
+/* Sección inferior del footer */
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #4A5FD9;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+/* Lista en la sección inferior del footer */
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista en la sección inferior del footer */
+.footer-bottom li {
+    margin-bottom: 0.5rem;
+}
+
+/* Enlaces en la sección inferior del footer */
+.footer-bottom a {
+    text-decoration: none;
+    color: #4A5FD9;
+}
+
+/* Hover para enlaces en la sección inferior del footer */
+.footer-bottom a:hover {
+    color: #2C3E91;
+}
+
+/* Consultas de medios para la responsividad */
+@media (max-width: 768px) {
+    /* Ajustar la sección superior del footer a una columna */
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustar el espaciado de la sección superior del footer */
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+
+    /* Ajustar la sección inferior del footer a una columna */
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+

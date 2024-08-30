@@ -91,18 +91,25 @@ header .cart-icon img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    
 }
 
 .product-item {
-    border: 1px solid #ddd;
+    border: 1px solid #f2f2f2;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 15px;
     transition: box-shadow 0.3s;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .product-item:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px #f2f2f2(0, 0, 0, 0.2);
+
+    
 }
 
 .product-item h3 {
@@ -131,7 +138,7 @@ header .cart-icon img {
 
 .add-to-cart {
     background-color: #4A5FD9;
-    color: white;
+    color: #f2f2f2;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -155,37 +162,99 @@ header .cart-icon img {
 }
 
 /* Footer Styles */
+/* Footer principal */
+/* Estilos generales del footer */
 footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 1rem;
     background-color: #1E2759;
     color: #f2f2f2;
-    text-align: center;
-    padding: 20px 0;
+    padding: 2rem;
 }
 
-footer .footer-links ul {
+/* Sección superior del footer */
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* Sección individual del footer */
+.footer-section {
+    padding: 1rem;
+    background-color: #1E2759;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+/* Lista de la sección del footer */
+.footer-section ul {
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
-footer .footer-links ul li {
-    display: inline;
+/* Elementos de la lista de la sección del footer */
+.footer-section ul li {
+    display: inline-block;
     margin-right: 10px;
 }
 
-footer .footer-links ul li a {
-    color: #f2f2f2;
+/* Enlaces de la lista de la sección del footer */
+.footer-section ul li a {
     text-decoration: none;
+    color: inherit;
 }
 
-footer .social-media a img {
-    width: 25px;
-    margin: 0 5px;
+/* Iconos en los enlaces de la sección del footer */
+.footer-section ul li a i {
+    font-size: 24px;
 }
 
-footer p {
-    margin: 10px 0 0;
+/* Estilos para las imágenes */
+.footer-section ul li a img {
+    max-width: 60px; /* Ancho máximo para las imágenes */
+    max-height: 40px; /* Altura máxima para las imágenes */
+    object-fit: contain; /* Ajusta la imagen para que mantenga su proporción */
 }
+
+/* Sección inferior del footer */
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #4A5FD9;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+/* Lista en la sección inferior del footer */
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista en la sección inferior del footer */
+.footer-bottom li {
+    margin-bottom: 0.5rem;
+}
+
+/* Enlaces en la sección inferior del footer */
+.footer-bottom a {
+    text-decoration: none;
+    color: #4A5FD9;
+}
+
+/* Hover para enlaces en la sección inferior del footer */
+.footer-bottom a:hover {
+    color: #1E2759;
+}
+
+</body>
+
+</html>
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {

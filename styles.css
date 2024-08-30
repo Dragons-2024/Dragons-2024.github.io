@@ -275,7 +275,7 @@ main {
   .destacados .producto button {
     position: absolute;
     bottom: 1rem; 
-    left: 50%; 
+    left: 45%; 
     transform: translateX(-50%); 
     padding: 0.5rem 1rem;
     background-color: #faa500;
@@ -283,6 +283,7 @@ main {
     border: none;
     border-radius: 100px;
     cursor: pointer;
+    width: 50%;
   }
 
   .destacados .producto button:hover {

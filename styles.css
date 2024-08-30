@@ -1,28 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
 main {
-    height: 80vh;
+    margin-top: 0rem; /* Ajusta según la altura del header */
+    padding-bottom: 0.5rem; /* Añade espacio en la parte inferior para el footer */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color:  #f8f8f8;;
 }
+
 .about-image {
     width: 100%;
-    height: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    overflow: hidden; /* Evita desbordamiento */
 }
+
 .about-image img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
 }
 
-@media (max-width: 768px) {
-    .about-image {
-        height: auto; 
-        max-width: 100%;
+.titulo-destacados {
+    text-align: center; /* Centra el texto */
+    font-size: 1.8rem; /* Tamaño de fuente para el título */
+    margin-bottom: 1rem; /* Espacio inferior para separar el título de los productos */
+    color: #333; /* Color del texto */
+}
+
+.destacados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f8f8f8;
+  }
+  
+  .destacados .producto {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .destacados .producto img {
+      width: 100%;
+      height: auto;
+  }
+  
+  .destacados .producto h2 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+  }
+  
+  .destacados .producto .precio-normal {
+      text-decoration: line-through;
+      color: #888;
+  }
+  
+  .destacados .producto .precio-descuento {
+      color: #4a5fd9;
+      font-weight: bold;
+  }
+  
+  .destacados .producto .precio-descuento span {
+      font-size: 0.9rem;
+      color: #4a5fd9;
+  }
+  
+  .destacados .producto button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #faa500;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .destacados {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas pequeñas */
+        gap: 0.5rem; /* Reduce el espacio entre los productos */
     }
 
-    .about-image img {
-        width: 100%;
-        height: auto; 
+    .destacados .producto {
+        padding: 0.5rem; /* Reduce el padding de cada producto */
+    }
+
+    .destacados .producto h2 {
+        font-size: 1rem; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .destacados .producto button {
+        padding: 0.25rem 0.10rem; /* Reduce el tamaño del botón */
+        font-size: 0.9rem; /* Reduce el tamaño del texto en el botón */
     }
 }

@@ -21,9 +21,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #4A5FD9;
+    background-color: #1E2759;
     padding: 10px;
-    color: white;
+    color: #f2f2f2;
 }
 
 header .logo img {
@@ -42,7 +42,7 @@ header .main-nav ul li {
 }
 
 header .main-nav ul li a {
-    color: white;
+    color: #f2f2f2;
     text-decoration: none;
     font-weight: bold;
 }
@@ -68,7 +68,7 @@ header .cart-icon img {
 .filter-box {
     width: 25%;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
     border-radius: 5px;
 }
 
@@ -126,11 +126,11 @@ header .cart-icon img {
 
 .product-item .discounted-price {
     font-size: 18px;
-    color: red;
+    color: #728ff2;
 }
 
 .add-to-cart {
-    background-color: #28a745;
+    background-color: #4A5FD9;
     color: white;
     padding: 10px;
     border: none;
@@ -139,7 +139,7 @@ header .cart-icon img {
 }
 
 .add-to-cart:hover {
-    background-color: #218838;
+    background-color: #1E2759;
 }
 
 /* Banner Styles */
@@ -156,8 +156,8 @@ header .cart-icon img {
 
 /* Footer Styles */
 footer {
-    background-color: #4A5FD9;
-    color: white;
+    background-color: #1E2759;
+    color: #f2f2f2;
     text-align: center;
     padding: 20px 0;
 }
@@ -174,7 +174,7 @@ footer .footer-links ul li {
 }
 
 footer .footer-links ul li a {
-    color: white;
+    color: #f2f2f2;
     text-decoration: none;
 }
 

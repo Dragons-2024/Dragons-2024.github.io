@@ -55,7 +55,6 @@ main {
 
   }
   
-
   .destacados .producto img {
       width: 100%;
       height: auto;
@@ -90,13 +89,13 @@ main {
     background-color: #faa500;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
   }
 
   .destacados .producto button:hover {
-    background-color: #4a5fd9; /* Cambia el color de fondo del botón en hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil al botón en hover */
+    background-color: #4a5fd9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
 
   @media (max-width: 1024px) {
@@ -117,9 +116,18 @@ main {
       padding-bottom: 4.5rem; /* aumenta el espacio inferior para asegurar que el botón no tape los precios */
     }
 
-  .destacados .producto button {
+    .destacados .producto button {
     padding: 0.3rem 0.8rem; /* tamaño del botón */
     font-size: 0.9rem; /*  tamaño del texto en el botón */
-  }
+    }
+
+     .titulo-destacados h2 {
+    font-size: 0.8rem;
+   }
+
+    .destacados .producto h2 {
+     font-size: 1rem;
+     margin: 0.5rem 0;
+    }
 }  
   

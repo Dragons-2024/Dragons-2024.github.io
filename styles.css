@@ -198,14 +198,131 @@ button:hover {
 
 /* main */
 main {
-    height: 80vh;
+    margin-top: 0rem; 
+    padding-bottom: 0.5rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color:  #f8f8f8;;
 }
 
+.about-image {
+    width: 100%;
+    height: auto; 
+    overflow: hidden; 
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.titulo-destacados {
+    text-align: center;
+    font-size: 1.8rem; 
+    margin-bottom: 1rem; 
+    color: #333; 
+}
+
+.destacados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f8f8f8;
+  }
+  
+  .destacados .producto {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    min-height: 260px; 
+    padding-bottom: 3.5rem; /
+
+  }
+  
+  .destacados .producto img {
+      width: 100%;
+      height: auto;
+  }
+  
+  .destacados .producto h2 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+  }
+  
+  .destacados .producto .precio-normal {
+      text-decoration: line-through;
+      color: #888;
+  }
+  
+  .destacados .producto .precio-descuento {
+      color: #4a5fd9;
+      font-weight: bold;
+  }
+  
+  .destacados .producto .precio-descuento span {
+      font-size: 0.9rem;
+      color: #4a5fd9;
+  }
+  
+  .destacados .producto button {
+    position: absolute;
+    bottom: 1rem; 
+    left: 45%; 
+    transform: translateX(-50%); 
+    padding: 0.5rem 1rem;
+    background-color: #faa500;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .destacados .producto button:hover {
+    background-color: #4a5fd9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  @media (max-width: 1024px) {
+    .destacados {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+    .destacados .producto {
+      min-height: 240px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .destacados {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    .destacados .producto {
+      min-height: 240px; /* aumenta un poco más la altura mínima para dar más espacio */
+      padding-bottom: 4.5rem; /* aumenta el espacio inferior para asegurar que el botón no tape los precios */
+    }
+
+    .destacados .producto button {
+    padding: 0.3rem 0.8rem; /* tamaño del botón */
+    font-size: 0.9rem; /*  tamaño del texto en el botón */
+    }
+
+     .titulo-destacados h2 {
+    font-size: 0.8rem;
+   }
+
+    .destacados .producto h2 {
+     font-size: 1rem;
+     margin: 0.5rem 0;
+    }
+} 
 
 /* Footer principal */
 /* Estilos generales del footer */

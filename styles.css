@@ -100,10 +100,25 @@ header .cart-icon img {
     padding: 15px;
     margin-bottom: 15px;
     transition: box-shadow 0.3s;
-
-    display:flex;
-    align-items:center;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+   
+    max-height: 100%;
+    max-width: 400px;
+    object-fit: contain;
+    margin-right: 15px;
+    
+}
+
+
+.product-item img {
+    max-height: 100%;
+    max-width: 200px;
+    object-fit: contain;
+    margin-right: 15px;
 }
 
 .product-item:hover {
@@ -115,6 +130,7 @@ header .cart-icon img {
 .product-item h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    
 }
 
 .product-item .rating img {

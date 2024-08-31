@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,80 @@
     <meta name="keywords" content="computadoras, laptops, tecnología, Magister">
     <meta name="author" content="Magister">
     <title>Lista de Productos - Magister</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header>
+        <section class="main-header">
+            <div class="Logo">
+                <img src="./img/magisterlogoblanco.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Buscar">
+                <button>Buscar</button>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Mi Cuenta</a></li>
+                    <li><a href="#">Carrito</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="sub-header">
+            <nav class="categorias">
+                <ul>
+                    <li>Tecnología
+                        <ul class="sub-categorias">
+                            <li><a href="/pdp.html">Computadores</a></li>
+                            <li><a href="#">Televisores</a></li>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Impresión</a></li>
+                            <li><a href="#">Cámaras</a></li>
+                        </ul>
+                    </li>
+                    <li>Electrodomésticos
+                        <ul class="sub-categorias">
+                            <li><a href="#">Climatización</a></li>
+                            <li><a href="#">Refrigeración</a></li>
+                            <li><a href="#">Lavadoras/Secadoras</a></li>
+                        </ul>
+                    </li>
+                    <li>Celulares
+                        <ul class="sub-categorias">
+                            <li><a href="#">Celulares</a></li>
+                            <li><a href="#">Tabletas</a></li>
+                            <li><a href="#">Smartwatch</a></li>
+                        </ul>
+                    </li>
+                    <li>Hogar
+                        <ul class="sub-categorias">
+                            <li><a href="#">Salas</a></li>
+                            <li><a href="#">Comedor</a></li>
+                            <li><a href="#">Cocina</a></li>
+                            <li><a href="#">Baño</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </section>
+    </header>
+
+
+
+
 
     
 
-   
-
-    
-    <main>
-         
-    <div class="breadcrumb">
-        <a href="#">Inicio</a> &gt; <a href="#">Categorias</a> &gt; Computadores
-    </div>
+        <div class="breadcrumb">
+            <a href="#">Inicio</a> &gt; <a href="#">Categorias</a> &gt; Computadores
+        </div>
         <div class="container">
-            
+
             <aside class="filter-box">
                 <h2>Filtrar por</h2>
                 <div class="filter-category">
@@ -47,7 +106,7 @@
                     <label><input type="checkbox"> 16 GB (15)</label><br>
                     <label><input type="checkbox"> 32 GB (9)
 
-                    
+
                 </div>
                 <div class="filter-category">
                     <h3>Disco</h3>
@@ -63,7 +122,7 @@
                 </div>
             </aside>
 
-           
+
             <section class="product-list">
                 <div class="list-header">
                     <span>Mostrando 10 resultados de 35</span>
@@ -75,123 +134,172 @@
                     </select>
                 </div>
 
-               
+
                 <div class="product-item">
                     <a href="#">
                         <img src="img/productos/computadora1.jpg" alt="Producto 1">
                         <h3>Lenovo ThinkPad X1 Carbon</h3>
                         <p class="rating"><img src="img/star.svg" alt="5 estrellas"> 5.0</p>
                         <p class="features">Intel i7, 16GB RAM, 512GB SSD</p>
-                        <p class="price"><span class="normal-price">$3.599.900</span> <span class="discounted-price">$2.879.200</span></p>
+                        <p class="price"><span class="normal-price">$3.599.900</span> <span
+                                class="discounted-price">$2.879.200</span></p>
                         <button class="add-to-cart">Añadir al Carrito</button>
                     </a>
                 </div>
 
-                
+
                 <div class="product-item">
                     <img src="img/productos/computadora2.jpg" alt="Producto 2">
                     <h3>HP Spectre x360</h3>
                     <p class="rating"><img src="img/star.svg" alt="4.5 estrellas"> 4.5</p>
                     <p class="features">Intel i5, 8GB RAM, 256GB SSD</p>
-                    <p class="price"><span class="normal-price">$6.499.000</span> <span class="discounted-price">$3.199.000</span></p>
+                    <p class="price"><span class="normal-price">$6.499.000</span> <span
+                            class="discounted-price">$3.199.000</span></p>
                     <button class="add-to-cart">Añadir al Carrito</button>
                 </div>
 
-                
+
                 <div class="product-item">
                     <img src="img/productos/computadora3.jpg" alt="Producto 3">
                     <h3>Dell XPS 13</h3>
                     <p class="rating"><img src="img/star.svg" alt="4.8 estrellas"> 4.8</p>
                     <p class="features">Intel i7, 16GB RAM, 512GB SSD</p>
-                    <p class="price"><span class="normal-price">$6.559.000</span> <span class="discounted-price">$5.903.100</span></p>
+                    <p class="price"><span class="normal-price">$6.559.000</span> <span
+                            class="discounted-price">$5.903.100</span></p>
                     <button class="add-to-cart">Añadir al Carrito</button>
                 </div>
-                
-                
-<div class="product-item">
-    <img src="img/productos/computadora4.jpg" alt="Producto 4">
-    <h3>Apple MacBook Air</h3>
-    <p class="rating"><img src="img/star.svg" alt="4.9 estrellas"> 4.9</p>
-    <p class="features">Apple M1, 8GB RAM, 256GB SSD</p>
-    <p class="price"><span class="normal-price">$3.399.000</span> <span class="discounted-price">$3.059.100</span></p>
-    <button class="add-to-cart">Añadir al Carrito</button>
-</div>
 
 
-<div class="product-item">
-    <img src="img/productos/computadora5.jpg" alt="Producto 5">
-    <h3>Asus ZenBook 14</h3>
-    <p class="rating"><img src="img/star.svg" alt="4.6 estrellas"> 4.6</p>
-    <p class="features">AMD Ryzen 7, 16GB RAM, 512GB SSD</p>
-    <p class="price"><span class="normal-price">$4.999.000</span> <span class="discounted-price">$3.999.200</span></p>
-    <button class="add-to-cart">Añadir al Carrito</button>
-</div>
+                <div class="product-item">
+                    <img src="img/productos/computadora4.jpg" alt="Producto 4">
+                    <h3>Apple MacBook Air</h3>
+                    <p class="rating"><img src="img/star.svg" alt="4.9 estrellas"> 4.9</p>
+                    <p class="features">Apple M1, 8GB RAM, 256GB SSD</p>
+                    <p class="price"><span class="normal-price">$3.399.000</span> <span
+                            class="discounted-price">$3.059.100</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
 
 
-<div class="product-item">
-    <img src="img/productos/computadora6.jpg" alt="Producto 6">
-    <h3>Acer Swift 3</h3>
-    <p class="rating"><img src="img/star.svg" alt="4.3 estrellas"> 4.3</p>
-    <p class="features">Intel i5, 8GB RAM, 512GB SSD</p>
-    <p class="price"><span class="normal-price">$3.039.920</span> <span class="discounted-price">$2.431.920</span></p>
-    <button class="add-to-cart">Añadir al Carrito</button>
-</div>
+                <div class="product-item">
+                    <img src="img/productos/computadora5.jpg" alt="Producto 5">
+                    <h3>Asus ZenBook 14</h3>
+                    <p class="rating"><img src="img/star.svg" alt="4.6 estrellas"> 4.6</p>
+                    <p class="features">AMD Ryzen 7, 16GB RAM, 512GB SSD</p>
+                    <p class="price"><span class="normal-price">$4.999.000</span> <span
+                            class="discounted-price">$3.999.200</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
 
 
-<div class="product-item">
-    <img src="img/productos/computadora7.jpg" alt="Producto 7">
-    <h3>Microsoft Surface Laptop 4</h3>
-    <p class="rating"><img src="img/star.svg" alt="4.7 estrellas"> 4.7</p>
-    <p class="features">Intel i5, 8GB RAM, 256GB SSD</p>
-    <p class="price"><span class="normal-price">$8.993.900</span> <span class="discounted-price">$8.094.510</span></p>
-    <button class="add-to-cart">Añadir al Carrito</button>
-</div>
+                <div class="product-item">
+                    <img src="img/productos/computadora6.jpg" alt="Producto 6">
+                    <h3>Acer Swift 3</h3>
+                    <p class="rating"><img src="img/star.svg" alt="4.3 estrellas"> 4.3</p>
+                    <p class="features">Intel i5, 8GB RAM, 512GB SSD</p>
+                    <p class="price"><span class="normal-price">$3.039.920</span> <span
+                            class="discounted-price">$2.431.920</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
 
 
-<div class="product-item">
-    <img src="img/productos/computadora8.jpg" alt="Producto 8">
-    <h3>Razer Blade 15</h3>
-    <p class="rating"><img src="img/star.svg" alt="4.8 estrellas"> 4.8</p>
-    <p class="features">Intel i7, 16GB RAM, 1TB SSD</p>
-    <p class="price"><span class="normal-price">$23.380.000</span> <span class="discounted-price">$11.690.000</span></p>
-    <button class="add-to-cart">Añadir al Carrito</button>
-</div>
+                <div class="product-item">
+                    <img src="img/productos/computadora7.jpg" alt="Producto 7">
+                    <h3>Microsoft Surface Laptop 4</h3>
+                    <p class="rating"><img src="img/star.svg" alt="4.7 estrellas"> 4.7</p>
+                    <p class="features">Intel i5, 8GB RAM, 256GB SSD</p>
+                    <p class="price"><span class="normal-price">$8.993.900</span> <span
+                            class="discounted-price">$8.094.510</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
 
 
-<div class="product-item">
-    <img src="img/productos/computadora9.jpg" alt="Producto 9">
-    <h3>HP Envy x360</h3>
-    <p class="rating"><img src="img/star.svg" alt="4.5 estrellas"> 4.5</p>
-    <p class="features">AMD Ryzen 5, 8GB RAM, 512GB SSD</p>
-    <p class="price"><span class="normal-price">$3.900.400</span> <span class="discounted-price">$3.705.380</span></p>
-    <button class="add-to-cart">Añadir al Carrito</button>
-</div>
+                <div class="product-item">
+                    <img src="img/productos/computadora8.jpg" alt="Producto 8">
+                    <h3>Razer Blade 15</h3>
+                    <p class="rating"><img src="img/star.svg" alt="4.8 estrellas"> 4.8</p>
+                    <p class="features">Intel i7, 16GB RAM, 1TB SSD</p>
+                    <p class="price"><span class="normal-price">$23.380.000</span> <span
+                            class="discounted-price">$11.690.000</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
 
 
-<div class="product-item">
-    <img src="img/productos/computadora10.jpg" alt="Producto 10">
-    <h3>LG Gram 17</h3>
-    <p class="rating"><img src="img/star.svg" alt="4.7 estrellas"> 4.7</p>
-    <p class="features">Intel i7, 16GB RAM, 1TB SSD</p>
-    <p class="price"><span class="normal-price">$7.140.000</span> <span class="discounted-price">$6.426.000</span></p>
-    <button class="add-to-cart">Añadir al Carrito</button>
-</div>
+                <div class="product-item">
+                    <img src="img/productos/computadora9.jpg" alt="Producto 9">
+                    <h3>HP Envy x360</h3>
+                    <p class="rating"><img src="img/star.svg" alt="4.5 estrellas"> 4.5</p>
+                    <p class="features">AMD Ryzen 5, 8GB RAM, 512GB SSD</p>
+                    <p class="price"><span class="normal-price">$3.900.400</span> <span
+                            class="discounted-price">$3.705.380</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
 
 
-               
+                <div class="product-item">
+                    <img src="img/productos/computadora10.jpg" alt="Producto 10">
+                    <h3>LG Gram 17</h3>
+                    <p class="rating"><img src="img/star.svg" alt="4.7 estrellas"> 4.7</p>
+                    <p class="features">Intel i7, 16GB RAM, 1TB SSD</p>
+                    <p class="price"><span class="normal-price">$7.140.000</span> <span
+                            class="discounted-price">$6.426.000</span></p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+
+
+
             </section>
         </div>
-         
-    <div class="banner">
-        <img src="img/promo3.png" alt="Banner Publicitario">
-    </div>
 
-   
-
-    </main>
-
+        <div class="banner">
+            <img src="img/promo3.png" alt="Banner Publicitario">
+        </div>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-section">
     
+                    <h3>Magister</h3>
+                    <p>Nit. 163.74048.25-4</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+    
+                    <h3>Medios de pago</h3>
+                   <ul>
+                        <li><a href="#"><img src="./img/visa.png" alt="visa"></a></li>
+                        <li><a href="#"><img src="./img/mastercard.png" alt="mastercard"></a></li>
+                        <li><a href="#"><img src="./img/americanexpress.png" alt="americanexpress"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pdp.html">Computadores</a></li>
+                    <li><a href="/cart.html">Carrito</a></li>
+    
+                </ul>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </footer>
 
-   
+
+ 
+
+
+
+
 </body>
+
 </html>

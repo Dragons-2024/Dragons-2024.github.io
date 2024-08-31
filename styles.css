@@ -183,6 +183,8 @@ h2+.cart-div{
     display: flex;
     flex-direction: column;
     margin-bottom:20px;
+    margin-left:10px;
+    margin-right: 10px;
 }
 
 #cart-aside>h2{
@@ -195,10 +197,12 @@ h2+.cart-div{
   justify-content: center;
   border-bottom: 3px solid #1E2759;
   color: #1E2759;
+  margin-bottom: 10px;
 }
 
-#cart-aside td{
-margin-bottom:100px;
+
+#cart-aside>table{
+border-spacing: 3px;
 }
 
  .cart-izq{
@@ -212,8 +216,7 @@ margin-bottom:100px;
 
  .cart-item-border{
     border-top:1px solid #7E8FF2;
-    margin-bottom:100px;
-    
+    color:#1E2759;
  }
 
  .cart-sum-color{
@@ -230,4 +233,112 @@ margin-bottom:100px;
     align-self: center;
     font-size: 18px;
     border:1px solid #000;
+ }
+
+
+ @media (max-width:320px){
+    #cart-main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "title"
+        "aside"
+        "aside"
+        "aside"
+        "section"
+        "section"
+        "section"
+        "section"
+        ;
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    #cart-title{  
+     margin-bottom:0;
+     padding-bottom: 2px;
+    }
+
+    #cart-title>span{
+        margin-bottom:0;
+    }
+
+    #cart-aside{
+        margin-top:0;
+        padding-top: 0;
+        width:320px;
+    }
+
+    #cart-button{
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+    
+    #cart-list{
+        width:320px;
+      }
+
+    #cart-list,#cart-aside{
+        margin:0 auto;  
+    }
+
+   
+
+    .cart-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "figure2 title2"
+        "figure2 div4"
+        "div3 div3" 
+        ;
+    }
+
+    .cart-div>figure{
+        grid-area: figure2;
+        margin-bottom: 0;
+        margin-left:8px;
+    }
+    
+    .cart-img{
+        width: 140px;
+        height:140px;
+        padding-right:0;
+    }
+    
+    .cart-product_name{
+        grid-area:title2;
+        margin-bottom:0;
+        padding-bottom:0;
+        font-size:14px;
+        margin-left:3px;
+        margin-right:5px;
+        height:60px;
+    }
+
+    .cart-divradiobutton{
+        grid-area: div3;
+        margin-left:0;
+        margin-top:0;
+    }
+
+    .cart-divradiobutton{
+        display: inline;
+        font-size:12px;
+        padding-top:0;
+    }
+
+    .cart-select-button{
+        grid-area:div4;
+        margin-top:0;
+        width:160px;
+        height:60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:0;
+        font-size:13px;
+    }
  }

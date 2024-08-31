@@ -141,16 +141,16 @@ header .cart-icon img {
 }
 
 .add-to-cart {
-    background-color: #4A5FD9;
+    background-color: #faa500;
     color: #f2f2f2;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
 }
 
 .add-to-cart:hover {
-    background-color: #1E2759;
+    background-color: #4a5fd9;
 }
 
 /* Banner Styles */

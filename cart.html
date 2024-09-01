@@ -2,116 +2,315 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <header>
-        <section class="main-header">
-            <div class="Logo">
-                <img src="./img/magisterlogoblanco.png" alt="logo">
-            </div>
-            <div class="search">
-                <input type="text" placeholder="Buscar">
-                <button>Buscar</button>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Mi Cuenta</a></li>
-                    <li><a href="#">Carrito</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="sub-header">
-            <nav class="categorias">
-                <ul>
-                    <li>Tecnología
-                        <ul class="sub-categorias">
-                            <li><a href="/pdp.html">Computadores</a></li>
-                            <li><a href="#">Televisores</a></li>
-                            <li><a href="#">Audio</a></li>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Impresión</a></li>
-                            <li><a href="#">Cámaras</a></li>
-                        </ul>
-                    </li>
-                    <li>Electrodomésticos
-                        <ul class="sub-categorias">
-                            <li><a href="#">Climatización</a></li>
-                            <li><a href="#">Refrigeración</a></li>
-                            <li><a href="#">Lavadoras/Secadoras</a></li>
-                        </ul>
-                    </li>
-                    <li>Celulares
-                        <ul class="sub-categorias">
-                            <li><a href="#">Celulares</a></li>
-                            <li><a href="#">Tabletas</a></li>
-                            <li><a href="#">Smartwatch</a></li>
-                        </ul>
-                    </li>
-                    <li>Hogar
-                        <ul class="sub-categorias">
-                            <li><a href="#">Salas</a></li>
-                            <li><a href="#">Comedor</a></li>
-                            <li><a href="#">Cocina</a></li>
-                            <li><a href="#">Baño</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </nav>
-        </section>
-    </header>
-
-    <main>
-
-    </main>
-
-    <footer>
-        <div class="footer-top">
-            <div class="footer-section">
-
-                <h3>Magister</h3>
-                <p>Nit. 163.74048.25-4</p>
-            </div>
-            <div class="footer-section">
-                <h3>Redes Sociales</h3>
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-
-                <h3>Medios de pago</h3>
-               <ul>
-                    <li><a href="#"><img src="./img/visa.png" alt="visa"></a></li>
-                    <li><a href="#"><img src="./img/mastercard.png" alt="mastercard"></a></li>
-                    <li><a href="#"><img src="./img/americanexpress.png" alt="americanexpress"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pdp.html">Computadores</a></li>
-                <li><a href="/cart.html">Carrito</a></li>
-
+<body id="cart-body">
+  <header>
+    <section class="main-header">
+      <div class="Logo">
+        <img src="./img/magisterlogoblanco.png" alt="logo">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Buscar">
+        <button class="header-button">Buscar</button>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Mi Cuenta</a></li>
+          <li><a href="#">Carrito</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="sub-header">
+      <nav class="categorias">
+        <ul>
+          <li>Tecnología
+            <ul class="sub-categorias">
+              <li><a href="/plp.html">Computadores</a></li>
+              <li><a href="#">Televisores</a></li>
+              <li><a href="#">Audio</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Impresión</a></li>
+              <li><a href="#">Cámaras</a></li>
             </ul>
-            <ul>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Politicas de privacidad</a></li>
-                <li><a href="#">Terminos y condiciones</a></li>
+          </li>
+          <li>Electrodomésticos
+            <ul class="sub-categorias">
+              <li><a href="#">Climatización</a></li>
+              <li><a href="#">Refrigeración</a></li>
+              <li><a href="#">Lavadoras/Secadoras</a></li>
             </ul>
+          </li>
+          <li>Celulares
+            <ul class="sub-categorias">
+              <li><a href="#">Celulares</a></li>
+              <li><a href="#">Tabletas</a></li>
+              <li><a href="#">Smartwatch</a></li>
+            </ul>
+          </li>
+          <li>Hogar
+            <ul class="sub-categorias">
+              <li><a href="#">Salas</a></li>
+              <li><a href="#">Comedor</a></li>
+              <li><a href="#">Cocina</a></li>
+              <li><a href="#">Baño</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
+    </section>
+  </header>
+
+  <main id="cart-main">
+    <section id="cart-title">
+      <h1>Carrito de Compras</h1>
+      <span><a href="index.html">Inicio</a> >
+        <a href="cart.html">Carrito</a></span>
+    </section>
+    <section id="cart-list">
+      <h2>Listado de productos de mi carrito:</h2>
+      <div class="cart-div">
+        <figure>
+          <img class="cart-img" src="img/Camara.jpg" alt="Camara" />
+        </figure>
+        <h3 class="cart-product_name">
+          Cámara Fotográfica CANON EOS T100 Negro
+        </h3>
+        <div class="cart-divradiobutton">
+          <h4>Método de envío:</h4>
+          <label for="radio-product1"><input class="cart-radiobutton" id="radio-product1.1" type="radio"
+              name="radio-button1" />Estandar
+          </label>
+          <label for="radio-product1"><input class="cart-radiobutton" id="radio-product1.2" type="radio"
+              name="radio-button1" checked />Express
+          </label>
+          <label for="radio-product1"><input class="cart-radiobutton" id="radio-product1.3" type="radio"
+              name="radio-button1" />Programado
+          </label>
         </div>
-    </footer>
+        <div class="cart-select-button">
+          <label>Cantidad:
+            <select name="cart-select" class="cart-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+          <button>
+            <img class="cart-delete" src="img/delete.svg" alt="Eliminar" />
+          </button>
+        </div>
+      </div>
+      <div class="cart-div">
+        <figure>
+          <img class="cart-img" src="img/Television.jpg" alt="Television" />
+        </figure>
+        <h3 class="cart-product_name">
+          TV TCL 43" Pulgadas 109 cm 43S5400A FHD LED Smart TV Android
+        </h3>
+        <div class="cart-divradiobutton">
+          <h4>Método de envío:</h4>
+          <label for="radio-product2"><input class="cart-radiobutton" id="radio-product2.1" type="radio"
+              name="radio-button2" />Estandar
+          </label>
+          <label for="radio-product2"><input class="cart-radiobutton" id="radio-product2.2" type="radio"
+              name="radio-button2" checked />Express
+          </label>
+          <label for="radio-product2"><input class="cart-radiobutton" id="radio-product2.3" type="radio"
+              name="radio-button2" />Programado
+          </label>
+        </div>
+        <div class="cart-select-button">
+          <label>Cantidad:
+            <select name="cart-select" class="cart-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+          <button>
+            <img class="cart-delete" src="img/delete.svg" alt="Eliminar" />
+          </button>
+        </div>
+      </div>
+      <div class="cart-div">
+        <figure>
+          <img class="cart-img" src="img/Reloj.jpg" alt="Smart Watch" />
+        </figure>
+        <h3 class="cart-product_name">
+          Banda SAMSUNG Smart Band Galaxy Fit3 Negro
+        </h3>
+        <div class="cart-divradiobutton">
+          <h4>Método de envío:</h4>
+          <label for="radio-product3"><input class="cart-radiobutton" id="radio-product3.1" type="radio"
+              name="radio-button3" />Estandar
+          </label>
+          <label for="radio-product3"><input class="cart-radiobutton" id="radio-product3.2" type="radio"
+              name="radio-button3" checked />Express
+          </label>
+          <label for="radio-product3"><input class="cart-radiobutton" id="radio-product3.3" type="radio"
+              name="radio-button3" />Programado
+          </label>
+        </div>
+        <div class="cart-select-button">
+          <label>Cantidad:
+            <select name="cart-select" class="cart-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </label>
+          <button>
+            <img class="cart-delete" src="img/delete.svg" alt="Eliminar" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <aside id="cart-aside">
+      <section>
+        <h2>Resumen de la compra</h2>
+        <table>
+          <tbody>
+            <td class="cart-izq cart-sum-color">
+              <b>Subtotal</b>
+            </td>
+            <td class="cart-der">
+              $4.598.800
+            </td>
+            </tr>
+            <tr>
+              <td class="cart-izq cart-sum-color">
+                <b>Envío</b>
+              </td>
+              <td class="cart-der">
+                $10.000
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-item-border cart-sum-color" colspan="2"><b>Descuentos</b></td>
+            </tr>
+            <tr>
+              <td class="cart-izq">
+                Cámara Fotográfica CANON EOS T100 Negro
+              </td>
+              <td class="cart-der">
+                -$479.800
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-izq">
+                TV TCL 43" Pulgadas 109 cm 43S5400A FHD LED Smart TV Android
+              </td>
+              <td class="cart-der">
+                -$379.980
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-izq">
+                Banda SAMSUNG Smart Band Galaxy Fit3 Negro
+              </td>
+              <td class="cart-der">
+                -$44.985
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-izq cart-sum-color">
+                <b>Total descuento</b>
+              </td>
+              <td class="cart-der">
+                -$889.770
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-item-border cart-sum-color" colspan="2"><b>Iva</b></td>
+            </tr>
+            <tr>
+              <td class="cart-izq">
+                Cámara Fotográfica CANON EOS T100 Negro
+              </td>
+              <td class="cart-der">
+                $364.648,00
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-izq">
+                TV TCL 43" Pulgadas 109 cm 43S5400A FHD LED Smart TV Android
+              </td>
+              <td class="cart-der">
+                $288.784,80
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-izq">
+                Banda SAMSUNG Smart Band Galaxy Fit3 Negro
+              </td>
+              <td class="cart-der">
+                $48.433,85
+              </td>
+            </tr>
+            <tr>
+              <td class="cart-izq cart-item-border">
+                <b>Total</b>
+              </td>
+              <td class="cart-der cart-item-border">
+                <b>$4.405.901,65</b>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="cart-button">Iniciar Pago</button>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-section">
+
+        <h3>Magister</h3>
+        <p>Nit. 163.74048.25-4</p>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+
+        <h3>Medios de pago</h3>
+        <ul>
+          <li><a href="#"><img src="./img/visa.png" alt="visa"></a></li>
+          <li><a href="#"><img src="./img/mastercard.png" alt="mastercard"></a></li>
+          <li><a href="#"><img src="./img/americanexpress.png" alt="americanexpress"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pdp.html">Computadores</a></li>
+        <li><a href="/cart.html">Carrito</a></li>
+
+      </ul>
+      <ul>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Politicas de privacidad</a></li>
+        <li><a href="#">Terminos y condiciones</a></li>
+      </ul>
+    </div>
+  </footer>
 
 
 </body>

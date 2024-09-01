@@ -275,7 +275,7 @@ button:hover {
 .destacados .producto button {
     position: absolute;
     margin-top: 5px;
-    bottom: -0.1rem;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 1rem;
@@ -284,7 +284,7 @@ button:hover {
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    width: 50%;
+    width: 60%;
     margin-bottom:5px;
 }
 
@@ -746,6 +746,7 @@ h2+.cart-div {
     width: 30px;
     border: 1px solid #0d0d0d;
     border-radius: 1px;
+    cursor: pointer;
 }
 
 
@@ -821,6 +822,7 @@ h2+.cart-div {
     font-size: 18px;
     border: 1px solid #000;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 @media (min-width:1900px) {

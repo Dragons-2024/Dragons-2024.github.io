@@ -346,7 +346,7 @@ main.pdp{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 0; /* Agregado padding superior e inferior */
+    padding: 20px 0; 
 }
 
 .product-description h1 {
@@ -359,7 +359,7 @@ main.pdp{
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
-    margin-top: 20px; /* Agregado margen superior */
+    margin-top: 20px; 
 }
 
 .product-image {
@@ -398,4 +398,95 @@ main.pdp{
     .product-summary {
         text-align: center;
     }
+}
+/* Especificaciones Técnicas */
+.product-specifications h2 {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.product-specifications table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product-specifications td {
+    padding: 8px 0;
+}
+
+/* Sección de Productos Relacionados */
+.related-products h2 {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.related-products .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.related-products .product-item {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-products .product-item img {
+    width: 220px; 
+    height: 180px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.related-products .product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    height: 40px; 
+}
+
+.related-products .product-item .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.related-products .product-item .features {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.related-products .product-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.related-products .product-item .add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.related-products .product-item .add-to-cart:hover {
+    background-color: #0056b3;
 }

@@ -1,138 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <section class="main-header">
-            <div class="Logo">
-                <img src="./img/magisterlogoblanco.png" alt="logo">
-            </div>
-            <div class="search">
-                <input type="text" placeholder="Buscar">
-                <button>Buscar</button>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Mi Cuenta</a></li>
-                    <li><a href="#">Carrito</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="sub-header">
-            <nav class="categorias">
-                <ul>
-                    <li>Tecnología
-                        <ul class="sub-categorias">
-                            <li><a href="/pdp.html">Computadores</a></li>
-                            <li><a href="#">Televisores</a></li>
-                            <li><a href="#">Audio</a></li>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Impresión</a></li>
-                            <li><a href="#">Cámaras</a></li>
-                        </ul>
-                    </li>
-                    <li>Electrodomésticos
-                        <ul class="sub-categorias">
-                            <li><a href="#">Climatización</a></li>
-                            <li><a href="#">Refrigeración</a></li>
-                            <li><a href="#">Lavadoras/Secadoras</a></li>
-                        </ul>
-                    </li>
-                    <li>Celulares
-                        <ul class="sub-categorias">
-                            <li><a href="#">Celulares</a></li>
-                            <li><a href="#">Tabletas</a></li>
-                            <li><a href="#">Smartwatch</a></li>
-                        </ul>
-                    </li>
-                    <li>Hogar
-                        <ul class="sub-categorias">
-                            <li><a href="#">Salas</a></li>
-                            <li><a href="#">Comedor</a></li>
-                            <li><a href="#">Cocina</a></li>
-                            <li><a href="#">Baño</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </nav>
-        </section>
+      <section class="main-header">
+        <div class="Logo">
+          <img src="./img/magisterlogoblanco.png" alt="logo" />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Buscar" />
+          <button>Buscar</button>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Mi Cuenta</a></li>
+            <li><a href="#">Carrito</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="sub-header">
+        <nav class="categorias">
+          <ul>
+            <li>
+              Tecnología
+              <ul class="sub-categorias">
+                <li><a href="/pdp.html">Computadores</a></li>
+                <li><a href="#">Televisores</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Impresión</a></li>
+                <li><a href="#">Cámaras</a></li>
+              </ul>
+            </li>
+            <li>
+              Electrodomésticos
+              <ul class="sub-categorias">
+                <li><a href="#">Climatización</a></li>
+                <li><a href="#">Refrigeración</a></li>
+                <li><a href="#">Lavadoras/Secadoras</a></li>
+              </ul>
+            </li>
+            <li>
+              Celulares
+              <ul class="sub-categorias">
+                <li><a href="#">Celulares</a></li>
+                <li><a href="#">Tabletas</a></li>
+                <li><a href="#">Smartwatch</a></li>
+              </ul>
+            </li>
+            <li>
+              Hogar
+              <ul class="sub-categorias">
+                <li><a href="#">Salas</a></li>
+                <li><a href="#">Comedor</a></li>
+                <li><a href="#">Cocina</a></li>
+                <li><a href="#">Baño</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
     <!-- Migaja de pan -->
     <div class="breadcrumb">
-        <a href="#">Inicio</a> &gt; <a href="#">Computadoras</a> &gt; <a href="#">Lista de Productos</a> &gt; Lenovo ThinkPad X1 Carbon
+      <a href="#">Inicio</a> &gt; <a href="#">Computadoras</a> &gt;
+      <a href="#">Lista de Productos</a> &gt; Lenovo ThinkPad X1 Carbon
     </div>
 
-    <!-- Contenido Principal: Descripción del Producto -->
+    <!-- Contenido Principal -->
     <main class="pdp">
-        <div class="container">
-            <div class="product-description">
-                <h1>Lenovo ThinkPad X1 Carbon</h1>
-                <div class="product-content">
-                    <div class="product-image">
-                        <img src="img/productos/computadora1.jpeg" alt="Lenovo ThinkPad X1 Carbon">
-                    </div>
-                    <div class="product-summary">
-                        <p>El Lenovo ThinkPad X1 Carbon es un portátil ultraligero diseñado para ofrecer el máximo rendimiento en un formato compacto. Equipado con un procesador Intel i7, 16GB de RAM y un almacenamiento SSD de 512GB, este dispositivo es ideal para profesionales que requieren movilidad sin comprometer la potencia.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container product-description">
+        <h1>Lenovo ThinkPad X1 Carbon</h1>
+        <div class="product-content">
+          <div class="product-image">
+            <img
+              src="img/productos/computadora1.jpeg"
+              alt="Lenovo ThinkPad X1 Carbon"
+            />
+          </div>
+          <div class="product-summary">
+            <p>
+              El Lenovo ThinkPad X1 Carbon es un portátil ultraligero diseñado
+              para ofrecer el máximo rendimiento en un formato compacto.
+              Equipado con un procesador Intel i7, 16GB de RAM y un
+              almacenamiento SSD de 512GB, este dispositivo es ideal para
+              profesionales que requieren movilidad sin comprometer la potencia.
+            </p>
+          </div>
         </div>
+
+        <!-- Especificaciones Técnicas -->
+        <div class="product-specifications">
+          <h2>Especificaciones Técnicas</h2>
+          <table>
+            <tr>
+              <td>Procesador</td>
+              <td>Intel Core i7</td>
+            </tr>
+            <tr>
+              <td>Memoria RAM</td>
+              <td>16GB DDR4</td>
+            </tr>
+            <tr>
+              <td>Almacenamiento</td>
+              <td>512GB SSD</td>
+            </tr>
+            <tr>
+              <td>Pantalla</td>
+              <td>14" Full HD</td>
+            </tr>
+            <tr>
+              <td>Peso</td>
+              <td>1.09 kg</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Te Podría Interesar -->
+        <div class="related-products">
+          <h2>Te podría interesar</h2>
+          <div class="product-list">
+            <div class="product-item">
+              <img
+                src="img/productos/computadora2.jpeg"
+                alt="HP Spectre x360"
+              />
+              <h3>HP Spectre x360</h3>
+              <p class="features">Intel i5, 8GB RAM, 256GB SSD</p>
+              <p class="price">$6.499.000</p>
+            </div>
+            <div class="product-item">
+              <img src="img/productos/producto3.jpeg" alt="Dell XPS 13" />
+              <h3>Dell XPS 13</h3>
+              <p class="features">Intel i7, 16GB RAM, 512GB SSD</p>
+              <p class="price">$6.559.000</p>
+            </div>
+            <div class="product-item">
+              <img
+                src="img/productos/computadora5.jpg"
+                alt="Asus ZenBook 14"
+              />
+              <h3>Asus ZenBook 14</h3>
+              <p class="features">AMD Ryzen 7, 16GB RAM, 1TB SSD</p>
+              <p class="price">$4.999.000</p>
+            </div>
+            <div class="product-item">
+              <img src="img/productos/computadora4.jpg" alt="Apple MacBook Air" />
+              <h3>Apple MacBook Air</h3>
+              <p class="features">Apple M1, 8GB RAM, 256GB SSD</p>
+              <p class="price">$3.399.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-
     <footer>
-        <div class="footer-top">
-            <div class="footer-section">
-
-                <h3>Magister</h3>
-                <p>Nit. 163.74048.25-4</p>
-            </div>
-            <div class="footer-section">
-                <h3>Redes Sociales</h3>
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-
-                <h3>Medios de pago</h3>
-               <ul>
-                    <li><a href="#"><img src="./img/visa.png" alt="visa"></a></li>
-                    <li><a href="#"><img src="./img/mastercard.png" alt="mastercard"></a></li>
-                    <li><a href="#"><img src="./img/americanexpress.png" alt="americanexpress"></a></li>
-                </ul>
-            </div>
+      <div class="footer-top">
+        <div class="footer-section">
+          <h3>Magister</h3>
+          <p>Nit. 163.74048.25-4</p>
         </div>
-        <div class="footer-bottom">
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pdp.html">Computadores</a></li>
-                <li><a href="/cart.html">Carrito</a></li>
-
-            </ul>
-            <ul>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Politicas de privacidad</a></li>
-                <li><a href="#">Terminos y condiciones</a></li>
-            </ul>
+        <div class="footer-section">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h3>Medios de pago</h3>
+          <ul>
+            <li>
+              <a href="#"><img src="./img/visa.png" alt="visa" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/mastercard.png" alt="mastercard"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/americanexpress.png" alt="americanexpress"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/pdp.html">Computadores</a></li>
+          <li><a href="/cart.html">Carrito</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Politicas de privacidad</a></li>
+          <li><a href="#">Terminos y condiciones</a></li>
+        </ul>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>

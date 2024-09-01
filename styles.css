@@ -345,7 +345,6 @@ main.pdp{
 .product-description {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding: 20px 0; 
 }
 
@@ -396,6 +395,10 @@ main.pdp{
     }
 
     .product-summary {
+        text-align: center;
+    }
+
+    .product-description {
         text-align: center;
     }
 }

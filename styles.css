@@ -1,3 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -260,23 +283,22 @@ button:hover {
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
-
-.destacados .producto .precio-normal {
+.precio-normal {
     text-decoration: line-through;
     color: #888;
 }
 
-.destacados .producto .precio-descuento {
+.precio-descuento {
     color: #4a5fd9;
     font-weight: bold;
 }
 
-.destacados .producto .precio-descuento span {
+.precio-descuento span {
     font-size: 0.9rem;
     color: #4a5fd9;
 }
 
-.destacados .producto button {
+.producto button {
     position: absolute;
     margin-top: 5px;
     bottom: 1rem;
@@ -292,7 +314,7 @@ button:hover {
     margin-bottom:5px;
 }
 
-.destacados .producto button:hover {
+.producto button:hover {
     background-color: #4a5fd9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -1225,8 +1247,6 @@ h2+.cart-div {
     flex: 1;
     min-width: 220px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -1244,46 +1264,31 @@ h2+.cart-div {
 }
 
 .related-products .product-item h3 {
-    font-size: 18px;
-    margin: 10px 0;
     height: 40px; 
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
 }
-
-.related-products .product-item .rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    color: #ffcc00;
-    margin-bottom: 10px;
-}
-
-.related-products .product-item .features {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
-}
-
-.related-products .product-item .price {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.related-products .product-item .add-to-cart {
-    background-color: #007bff;
-    color: white;
+.product-item button {
+    padding: 0.5rem 0;
+    background-color: #faa500;
+    color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 60%;
+    margin: 5px auto;
+
+    
+
 }
 
-.related-products .product-item .add-to-cart:hover {
-    background-color: #0056b3;
+.producto-item button:hover {
+    background-color: #4a5fd9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .product-list-related{
-    width: 80%;
+    width: 100%;
 }

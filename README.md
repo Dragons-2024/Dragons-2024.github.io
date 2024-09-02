@@ -38,7 +38,7 @@ El proyecto consta de varios archivos clave que conforman la base del sitio web:
 Para ver el sitio web localmente en tu máquina:
 
 1. Clona el repositorio a tu máquina local.
-2. Abre el archivo `index.html` en tu navegador para comenzar a navegar por Magister Magister.
+2. Abre el archivo `index.html` en tu navegador para comenzar a navegar por Magister.
 
 ```bash
 git clone < URL-del-repositorio >

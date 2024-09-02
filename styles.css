@@ -1269,13 +1269,13 @@ h2+.cart-div {
     margin: 0.5rem 0;
 }
 .product-item button {
-    padding: 0.5rem 0;
+    padding: 0.5rem 5px;
     background-color: #faa500;
     color: #fff;
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    width: 60%;
+   
     margin: 5px auto;
 
     

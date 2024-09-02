@@ -256,7 +256,7 @@ button:hover {
 
 .destacados {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     width: 100%;
     padding: 1rem;
